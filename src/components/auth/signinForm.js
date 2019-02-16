@@ -2,7 +2,8 @@ import React, { Component } from "react";
 import { reduxForm, Field } from "redux-form";
 
 import { FormTitle } from "../formTitle";
-import { FormInput } from "../formFields";
+import { FormInput, FormButton } from "../formFields";
+import Textlink from "../textLink";
 
 class SigninForm extends Component {
   render() {
@@ -25,6 +26,17 @@ class SigninForm extends Component {
           title="Password"
           component={FormInput}
         />
+        <Field
+          className="sign-in-form__login"
+          name="login"
+          type="submit"
+          title="Login"
+          component={FormButton}
+        />
+        <div className='sign-in-form__text-links'>
+            <Textlink to='/forgot' text='Forgot Password? '/>
+            <Textlink to='/signup' text='Not a Member? Register here' />
+        </div>
       </form>
     );
   }
