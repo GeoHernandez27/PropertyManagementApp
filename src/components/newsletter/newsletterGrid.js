@@ -4,8 +4,6 @@ import NewsletterBox from './newsletterBox';
 import NewsletterArchive from './newsletterArchive';
 import NewsletterLatest from './newsletterLatest';
 import Button from '../button';
-import { throws } from 'assert';
-
 
 class NewsletterGrid extends Component {
 
