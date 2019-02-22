@@ -7,6 +7,7 @@ import NewsletterLatest from './newsletterLatest';
 
 class NewsletterGrid extends Component {
     render() {
+        
 
         const latest = {
             _id: '115',
