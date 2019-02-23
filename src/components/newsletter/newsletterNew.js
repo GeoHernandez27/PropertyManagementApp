@@ -1,7 +1,8 @@
 import React, {Component } from 'react';
 
 
-import SigninForm from '../auth/signinForm';
+
+import NewNewsletterForm from './newsletterNewForm';
 
 class NewNewsletter extends Component {
     
@@ -12,7 +13,7 @@ class NewNewsletter extends Component {
     render() {
         return(
             <div className='new-newsletter'>
-                <SigninForm onSubmit={(event) => this.onSubmit(event)}/>
+                <NewNewsletterForm onSubmit={(event) => this.onSubmit(event)}/>
             </div>
         )
     }
