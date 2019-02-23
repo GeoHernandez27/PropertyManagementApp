@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { reduxForm, Field } from "redux-form";
 
 import { FormTitle } from "../formTitle";
-import { FormInput, FormButton, FormTextArea } from "../formFields";
+import { FormInput, FormButton, FormTextArea, FormImage } from "../formFields";
 import Textlink from "../textLink";
 
 class NewNewsletterForm
@@ -47,6 +47,16 @@ class NewNewsletterForm
           type="submit"
           title="Submit"
           component={FormButton}
+        />
+        <Field
+          className="new-newsletter-form__image"
+          small={true}
+          danger={true}
+          name="image"
+          type="type"
+          title="Image"
+          component={FormImage}
+          
         />
         
       </form>
