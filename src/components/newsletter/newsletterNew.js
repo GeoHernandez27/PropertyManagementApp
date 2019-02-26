@@ -7,10 +7,10 @@ import NewNewsletterForm from './newsletterNewForm';
 class NewNewsletter extends Component {
     
     onSubmit = (fields, button) => {
-        console.log('trying to submit');
+        this.props.history.push('/dashboard')
     }
     onCancel = () => {
-        console.log('trying to cancel');
+        this.props.history.push('/dashboard')
     }
         
 

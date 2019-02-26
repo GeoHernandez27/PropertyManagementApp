@@ -56,7 +56,7 @@ class NewNewsletterForm
           type="type"
           title="Image"
           component={FormImage}
-          
+          onClick={this.props.onCancel}
         />
         
       </form>
